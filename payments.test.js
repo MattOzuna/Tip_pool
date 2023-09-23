@@ -40,10 +40,11 @@ describe("payments test (with setup and tear-down)", function() {
     
         let list = document.querySelectorAll('#paymentTable tbody tr td');
     
-        expect(list.length).toEqual(3);
+        expect(list.length).toEqual(4);
         expect(list[0].innerText).toEqual('$100');
         expect(list[1].innerText).toEqual('$20');
         expect(list[2].innerText).toEqual('20%');
+        expect(list[3].innerText).toEqual('X');
       });
 
     it('should payment update summary table', function () {
@@ -56,6 +57,7 @@ describe("payments test (with setup and tear-down)", function() {
         expect(list[0].innerText).toEqual('$100');
         expect(list[1].innerText).toEqual('$20');
         expect(list[2].innerText).toEqual('20%');
+        
       });
       
 

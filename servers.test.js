@@ -25,9 +25,10 @@ describe("Servers test (with setup and tear-down)", function() {
 
     let list = document.getElementById('server1').childNodes;
 
-    expect(list.length).toEqual(2);
+    expect(list.length).toEqual(3);
     expect(list[0].innerText).toEqual('Alice');
     expect(list[1].innerText).toEqual('$0.00');
+    expect(list[2].innerText).toEqual('X');
   });
   
   afterEach(function() {
